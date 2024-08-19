@@ -595,6 +595,115 @@ main {
   background-image: url("./images/trainer6.png");
 }
 
+/* Unique Section */
+.challenge_container {
+  max-width: 100%;
+  margin: 0 auto 50px;
+  padding: 80px 16px;
+  border-radius: 10px;
+}
+
+.challenge_header {
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--btn-background-color);  /* Using the button color for header */
+}
+
+.challenge_subheader {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.unique_grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;  /* Small gap between the boxes */
+  justify-content: center;
+}
+
+.unique_card {
+  width: 370px;
+  height: 450px;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: #bebebe22;  /* Slightly darker than background */
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s, background-color 0.3s;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.unique_card:hover {
+  border-color: rgb(209, 75, 54);  /* Border changes color on hover */
+}
+
+.unique_card_content {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.unique_card h4 {
+  margin-bottom: 16px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.unique_card h3 {
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+
+.unique_card h3::after {
+  content: "";
+  display: block;
+  margin-top: 16px;
+  width: 80%;  /* Adjust the width of the line */
+  height: 2px;  /* Height of the line */
+  background-color: #fff;  /* White line */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unique_card p {
+  margin-bottom: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.unique_card p .check-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;  /* Space between icon and text */
+}
+
+.unique_btn {
+  color: #fff;
+  background-color: rgb(209, 75, 54);
+  border: 2px solid rgb(209, 75, 54);
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.unique_btn:hover {
+  color: rgb(209, 75, 54);
+  background-color: #fff;
+}
+
 /* Footer Section */
 footer {
   background-color: #bebebe22;
@@ -745,6 +854,24 @@ footer {
   .team-intro > h1 {
     font-size: 40px;
   }
+  .unique_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+  }
+
+  .unique_card {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px;
+  }
+
+  .challenge_header {
+    font-size: 28px;
+  }
+
+  .challenge_subheader {
+    font-size: 14px;
+  }
 
   .footer-links {
     grid-template-columns: 1fr;
@@ -852,6 +979,23 @@ footer {
   .team-member {
     width: 326.66666px;
     height: 272px;
+  }
+  .unique_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+
+  .unique_card {
+    width: 370px;
+    height: 450px;
+  }
+
+  .challenge_header {
+    font-size: 40px;
+  }
+
+  .challenge_subheader {
+    font-size: 16px;
   }
 
   .footer-main {
